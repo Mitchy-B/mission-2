@@ -4,6 +4,7 @@ function calculateNDL(depth) {
   // Depth in meters and their matching NDLs in minutes
   const depthLimits = [10, 12, 14, 16, 18, 20, 22, 25, 30, 35, 40, 42]; // depth limits
   const ndlValues = [219, 147, 98, 72, 56, 45, 37, 29, 20, 14, 9, 8]; // matching NDLs
+  //Make into array of objects to streamline and make easier to read
 
   // Find the appropriate depth limit and matching NDL
   for (let i = 0; i < depthLimits.length; i++) {
