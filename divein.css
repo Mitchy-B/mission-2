@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: tahoma;
+  margin: 0%;
+  padding-bottom: 0;
+  background-color: rgb(193, 233, 241);
+}
+
+/* top of page/header background image*/
+header {
+  background-image: url(images/headerbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 250px;
+  margin: 0%;
+  /* border: 1px solid red ; */
+}
+
+/*main section of page*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+  margin-left: 10vw;
+}
+
+/* Logo */
+#banksydives {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin-top: -7vh;
+  margin-left: -9vw;
+  /* border: 1px solid yellow; */
+}
+
+/* The navigation bar including logo */
+.navbar {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  background-color: #ffffff80;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  width: 45vw;
+  margin-top: 0;
+  margin-left: 10vw;
+  list-style: none;
+  font-size: 16px;
+  /* border: 2px solid blue; */
+}
+
+/*bottom part of page*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/getmooving.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+  /* border: red solid; */
+}
+
+/* left section of main part of page */
+#left {
+  margin-left: 0;
+  width: 45%;
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+  color: orange;
+}
+
+.aucklandscuba {
+  border-radius: 50%; /*made the square white surround dissapear and wrap around the circle*/
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* right section of main part of page */
+#right {
+  margin-top: 8%;
+  text-align: center;
+  width: 45%;
+  background-color: rgb(193, 233, 241);
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* buttons on the nav bar */
+
+/* 
+.btn {
+      text-align: center; 
+     font-size: 16px;
+    font-weight: 700; 
+      background-color: rgb(17, 132, 234); 
+     border: solid purple;  
+} */
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 700;
+  list-style: none;
+  margin: 2px 5px;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 16px;
+  /* border: solid purple; */
+}
+
+.nav-link:hover {
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;
+  background-image: url(images/getmooving.jpg);
+  /* border: 1px solid red; */
+}
+
+fieldset {
+  background-color: rgba(224, 216, 216, 0.642);
+  margin: 0%;
+  border: none;
+  font-weight: 700;
+}
+Legend {
+  padding-top: 10%;
+}
+
+/*Contact form*/
+input {
+  width: 100%;
+}
+
+input [type="text"],
+input [type="email"] {
+  padding: 2px 2px;
+  margin: 8px 0;
+}
+
+input [type="radio"] + label {
+  color: sky;
+}
+textarea {
+  border: 2px solid black;
+  border-radius: 15px;
+}
+input[type="submit"] {
+  border-radius: 15px;
+  opacity: 0.8;
+}
+input[type="submit"]:hover {
+  background-image: url(images/getmooving.jpg);
+  color: white;
+}
+
+/*Media queries reactive*/
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15vh;
+  }
+  #left {
+    margin-left: 10vh;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .navbar {
+    flex-direction: column;
+  }
+  #banksydives {
+    margin-top: -150px;
+  }
+}
+
+/* bubble animation CSS here */
+
+/* windows + . for emojis  */
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(2);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  animation: bubble 5s linear infinite;
+}
+
+.bubble:nth-child(2) {
+  left: 20%;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+  left: 40%;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+  left: 60%;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(5) {
+  left: 80%;
+  animation-delay: 4s;
+}
+
+/* I would like to use grid for a nicer lay out
+          and make  my responsive look prettier.
+          used a lot of useless code (doubled up)
+          */
+
+/* Teacher notes Contrast (text on contact box) and 2 headers*/

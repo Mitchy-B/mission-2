@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="diveplanner.css" />
+        <script src = "planner.js" defer></script>
+    <body>
+        <header> 
+            <div class="bubble">🫧</div>
+            <div class="bubble">🫧</div>
+            <div class="bubble">🫧</div>
+            <div class="bubble">🫧</div>
+            <div class="bubble">🫧</div>
+            
+        </header>
+        <nav>  
+              <ul class="navbar">
+                 <img id="banksydives" src="images/banksydives.jpg" alt="logo">
+                    <li class="btn nav-link"><a href="divein.html"></a>HOME</li>
+                    <li class="btn nav-link">CONTACT ME</li>
+                    <li class="btn nav-link">MY FAVOURITE SPOTS</li>
+                    <li class="btn nav-link">MY FAVOURITE COURSES</li>
+                    <li class="btn nav-link">DIVE PLANNER</li>
+                    <li class="btn nav-link">FAQs</li>
+                    
+                </ul>
+
+
+        </nav>
+
+        <main>
+            <h1>Dive Planner</h1>
+            <br>
+    <form id="divePlannerForm">
+      <label for="depth">Enter planned depth (in meters):</label>
+      <input type="number" id="depth" name="depth" required /><br /><br />
+      <button type="submit">Calculate NDL</button>
+    </form>
+    <div id="result"></div>
+    <div><img src = "https://scubadivingoverload.com/wp-content/uploads/2023/04/PADI-Dive-Tables-Section-1-1024x682.jpg" id ="dive-table"></div>
+           
+
+           
+        </main>
+       
+    </body>
+
+</html>
